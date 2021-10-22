@@ -1,0 +1,183 @@
+/* STYLES FOR MY GITHUB PAGES*/
+/* DEFAULT RESETS */
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border box;
+    box-sizing:border-box;
+    margin:0;
+    color:#666;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+img {
+    max-width:100%;
+    height:auto;
+}
+
+/* GENERAL STYLES */
+
+.container {
+    display:grid;
+    grid-template-columns:1fr;
+    grid-auto-rows:minmax(80px, auto);
+    margin:0 auto;
+    max-width:1200px;
+    font-family:'Arial', 'Helvetica', sans-serif;
+}
+
+/* HEADER STYLING */
+header {
+    grid-column:1/4;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    padding:10px;
+    background-color:#3d3d3d;
+    color:#ffffff;
+}
+/* NAV STYLING */
+nav {
+    grid-column:1/4;
+    letter-spacing:2px;
+    font-size:1em;
+    padding:5px 30px;
+    align-items:center;
+    background-color:#01D7F6;
+}
+nav ul {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+nav ul li {
+    display:inline;
+    list-style-type:none;
+    z-index:3;
+    padding:10px;
+}
+nav li a {
+    text-decoration:none;
+    color:white;
+}
+nav li a:hover {
+    color:#008599;
+}
+.active {
+    color:#008599;
+}
+/* SECTION STYLING */
+section {
+    grid-column:1/4;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    padding:10px;
+    height:200px;
+    font-size:1.5em;
+}
+table, th, td {
+    border:1px solid #666;
+    border-collapse:collapse;
+    padding:10px;
+}
+/* PANEL 1 STYLING */
+.panel1 {
+    grid-column:1/4;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+.panel1 h3 {
+    text-align:center;
+}
+.panel1-title {
+    grid-column:1/4;
+    padding:10px;
+    background-color:#3d3d3d;
+    color:#ffffff;
+}
+.panel1-part1 {
+    grid-column:1/2;
+    margin:10px 5px;
+    padding:10px;
+    padding-top:40px;
+    border-radius:20px;
+    background-color:#aaaaaa;
+    color:#ffffff;
+}
+.panel1-part1 a:link,a:visited {
+    color:#ffffff;
+}
+.panel1-part1 a:hover {
+    color:#01D7F6;
+}
+.panel1-part1 a:active {
+    color:#01D7F6;
+}
+.panel1-part2 {
+    grid-column:2/3;
+    margin:10px 5px;
+    padding:10px;
+    padding-top:40px;
+    border-radius:20px;
+    background-color:#aaaaaa;
+    color:#ffffff;
+}
+.panel1-part3 {
+    grid-column:3/4;
+    margin:10px 5px;
+    padding:10px;
+    padding-top:40px;
+    border-radius:20px;
+    background-color:#aaaaaa;
+    color:#ffffff;
+}
+/* PERSONA STYLING*/
+.personas {
+    grid-column:1/5;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
+.personas h3 {
+    border-bottom:2px solid #ffffff;
+}
+.persona-1 {
+    grid-column:1/3;
+    padding:10px;
+    border:2px solid #ffffff;
+    border-radius:20px;
+    background-color:#3d3d3d;
+    color:#ffffff;
+}
+.persona-2 {
+    grid-column:3/5;
+    padding:10px;
+    border:2px solid #ffffff;
+    border-radius:20px;
+    background-color:#01D7F6;
+    color:#ffffff;
+}
+/* FOOTER STYLING */
+footer {
+    grid-column:1/4;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    text-align:center;
+    background-color:#3d3d3d;
+    color:#ffffff;
+}
+.footer-address {
+    grid-column:1/2;
+    padding:10px;
+    padding-top:20px; 
+}
+.footer-credits {
+    grid-column:2/3;
+    padding:10px;
+    padding-top:20px; 
+}
+.footer-contact {
+    grid-column:3/4;
+    padding:10px;
+    padding-top:20px; 
+}
